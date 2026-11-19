@@ -1,140 +1,141 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fcfdff">
-  <title>我們的團隊</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #354253;
-      --blue: #dcedf8;
-      --pink: #f7e2e8;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      position: relative;
-      display: grid;
-      min-height: 100vh;
-      margin: 0;
-      overflow: hidden;
-      place-items: center;
-      color: var(--ink);
-      background: #fcfdff;
-      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .shape {
-      position: absolute;
-      z-index: -1;
-      pointer-events: none;
-    }
-
-    .shape-blue {
-      top: -15vmin;
-      left: -9vmin;
-      width: 43vmin;
-      height: 43vmin;
-      border-radius: 42% 58% 63% 37% / 46% 41% 59% 54%;
-      background: var(--blue);
-      transform: rotate(-18deg);
-    }
-
-    .shape-pink {
-      right: -9vmin;
-      bottom: -19vmin;
-      width: 47vmin;
-      height: 47vmin;
-      border-radius: 38% 62% 41% 59% / 56% 43% 57% 44%;
-      background: var(--pink);
-      transform: rotate(22deg);
-    }
-
-    .shape-small {
-      top: 19%;
-      right: 15%;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: #e8f2f8;
-    }
-
-    main {
-      width: min(860px, calc(100% - 48px));
-      padding: 48px 0;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0 0 72px;
-      font-size: clamp(32px, 5vw, 48px);
-      font-weight: 500;
-      letter-spacing: .12em;
-    }
-
-    .members {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 24px;
-    }
-
-    .members p {
-      margin: 0;
-      font-size: 17px;
-      letter-spacing: .08em;
-    }
-
-    @media (max-width: 600px) {
-      main {
-        width: min(420px, calc(100% - 48px));
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fcfdff" />
+    <title>我們的團隊</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #354253;
+        --blue: #dcedf8;
+        --pink: #f7e2e8;
       }
 
-      h1 {
-        margin-bottom: 48px;
+      * {
+        box-sizing: border-box;
       }
 
-      .members {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 32px 16px;
+      body {
+        position: relative;
+        display: grid;
+        min-height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        place-items: center;
+        color: var(--ink);
+        background: #fcfdff;
+        font-family:
+          "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .shape {
+        position: absolute;
+        z-index: -1;
+        pointer-events: none;
       }
 
       .shape-blue {
-        width: 55vmin;
-        height: 55vmin;
+        top: -15vmin;
+        left: -9vmin;
+        width: 43vmin;
+        height: 43vmin;
+        border-radius: 42% 58% 63% 37% / 46% 41% 59% 54%;
+        background: var(--blue);
+        transform: rotate(-18deg);
       }
 
       .shape-pink {
-        width: 58vmin;
-        height: 58vmin;
+        right: -9vmin;
+        bottom: -19vmin;
+        width: 47vmin;
+        height: 47vmin;
+        border-radius: 38% 62% 41% 59% / 56% 43% 57% 44%;
+        background: var(--pink);
+        transform: rotate(22deg);
       }
 
       .shape-small {
-        top: 14%;
-        right: 12%;
-        width: 22px;
-        height: 22px;
+        top: 19%;
+        right: 15%;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #e8f2f8;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="shape shape-blue" aria-hidden="true"></div>
-  <div class="shape shape-pink" aria-hidden="true"></div>
-  <div class="shape shape-small" aria-hidden="true"></div>
-  <main>
-    <h1>我們的團隊</h1>
-    <section class="members" aria-label="團隊成員">
-      <p>莎里古姆</p>
-      <p>洪尊翔</p>
-      <p>楊杰睿</p>
-      <p>林雍訢</p>
-    </section>
-  </main>
-</body>
+
+      main {
+        width: min(860px, calc(100% - 48px));
+        padding: 48px 0;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 72px;
+        font-size: clamp(32px, 5vw, 48px);
+        font-weight: 500;
+        letter-spacing: 0.12em;
+      }
+
+      .members {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .members p {
+        margin: 0;
+        font-size: 17px;
+        letter-spacing: 0.08em;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          width: min(420px, calc(100% - 48px));
+        }
+
+        h1 {
+          margin-bottom: 48px;
+        }
+
+        .members {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 32px 16px;
+        }
+
+        .shape-blue {
+          width: 55vmin;
+          height: 55vmin;
+        }
+
+        .shape-pink {
+          width: 58vmin;
+          height: 58vmin;
+        }
+
+        .shape-small {
+          top: 14%;
+          right: 12%;
+          width: 22px;
+          height: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shape shape-blue" aria-hidden="true"></div>
+    <div class="shape shape-pink" aria-hidden="true"></div>
+    <div class="shape shape-small" aria-hidden="true"></div>
+    <main>
+      <h1>我們的團隊</h1>
+      <section class="members" aria-label="團隊成員">
+        <p>莎里古姆</p>
+        <p>洪尊翔</p>
+        <p>楊杰睿</p>
+        <p>林雍訢</p>
+      </section>
+    </main>
+  </body>
 </html>

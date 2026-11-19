@@ -1,6 +1,0 @@
-{
-  "name": "SafePee.map (廁評) - 智慧安心公廁導航",
-  "description": "以包容、性別平等、降低如廁焦慮為核心的安心智慧公廁導航系統，結合即時擁擠監測、異性打掃預警與直覺手勢導航。",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
